@@ -1,26 +1,21 @@
 <div>
-    <div style="float:left; width:50%; position: fixed">
+  
         <p>
-           <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+           <a href="#menu-toggle" class="btn btn-default btn-xs" id="menu-toggle">Toggle Menu</a>
         </p>
-        <h3>SSL Certificate Management App</h3>
+        <h4>Other Products for Trust Services</h4>
  
         <div style="position: relative; left: 0; top: 0;">
-            <img id="iphone" src="images/iphone.png" style="position: relative; top:0; left: 0;"/>
-            <img id="symc_app_display" src="images/symc_app.gif" style="position: absolute; top: 69px; left: 110px;"/>
         </div>
         
-    </div>
-    <div style="float:right; width:50%; overflow-y:scroll">  
-    <br>
-    <br>
+    
     <br>
    <p> <u>Progress: </u></p>
         <table style="width:70%">
           <tr>
-            <td><img src=images/h_complete.png height="100" width="100"></td>
-            <td><img src=images/h_three_fourth.png height="100" width="100" align="center"></td>		
-            <td><img src=images/h_half.png height="100" width="100"></td>
+            <td><img src=images/h_half.png height="70" width="70"></td>
+            <td><img src=images/h_quarter.png height="70" width="70" align="center"></td>		
+            <td><img src=images/h_none.png height="70" width="70"></td>
           </tr>
           <tr>
               <!--
@@ -34,69 +29,56 @@
         </table>
         <br>
    
-          <p style="background-color:rgb(251, 174, 38); padding-left:4.3em">Quick to Release
-Innovation</p>
+          <p style="background-color:rgb(251, 174, 38); padding-left:4.3em">Longer-Term Innovation</p>
 
  
 
  
-        Bringing Current Web SSL Retail Portal to Mobile
-        What does this solve?
+       Pre-generate Certs on Customer behalf
 <br>
 <ul>
 <li>
-        Easier purchase and management of SSL certificates by customer
+        There are many times that a customer holds a valid cert with uncompromised keys, yet due to business or industry hard deadlines we need to issue them a new cert. Eg: The time chrome mandated all customers to have only SHA256 certs, when long term cert validity was to be cut short or when new identifiers were need in certs as ber CAB Forum. In all these cases we can reuse the same keys  in a different cert package and reduce customer effort to submit new CSR. 
+
         </li>
         <li>
 
-Can send customer push messages. These can be security-related (“You have two 
-SHA-1 certificates that need to be replaced”) or marketing-related (“Black Friday 
-Special – EV Certificate for only $599”).
-</li>
-<li>
-Can build other usability enhancements not possible on a web interface (ideas 
-discussed later)
-</li>
-<li>
-
-Display CSR in QR code format on SSLAssistant. Use Mobile App to take scan code and upload CSR for enrollment
-</li>
-<li>
-Leverage Trust Center Customer portal to manage documents 
-needed by Auth team. Customer Usability/Productivity fix: Notify customer of pending/optional
-documents to hasten customer authentication and hence cert issuance, and let
-them upload it through Trust Center portal. Replaces manually emailing 
-documents. Easy to know what was submitted.
+Identify when new CSR is not required, and generate new cert for customer on our end.
+The same means we use to scan and email customers about their soon unusable certs, can be automated and a new instant issued cert is sent 
 </li>
 </ul>
 
-
-Last known state?
-
+      Master Customer Data Managment
+<br>
 <ul>
 <li>
+      This will be a good way of pinning down the kind of customers we are facing. Some simple things we can know about our customers are how many are brand driven, are high ticket buyers, are windows shopper or have high churn potential, etc., and then appraise the impact of business decisions on whatever actionable segments we decide.
 
-Engineering would need to build a lightweight catalog service, to file customer 
-documents with Auth team database
+        </li>
+
+        <li>
+        
+        Customer-centricity: Within Business Intelligence, the standard view is of linking tables around entities like order-number or account numbers. Instead data could be re-modelled around the entity of a customer, which should prepare it for better business insight down the pipeline. For instance, we can then easily slice our customer base in quite a few number of ways like by customer location, business size and type, ticket size and type, brand focus, churn rate, CLV or  number and types of recorded interaction with different Symantec SSL channels. 
 </li>
+        </ul>
 
+        Cyber Liability Issurance
+<br>
+<ul>
 <li>
-
-Retail team has existing services to send back customer data to any client
+New business: 1)   Lucrative $2bn market. with no dominant providers. 2) companies in the service sector are showing 75% increase in cyber liability demands, climbing with the rate/visibility of cyber attacks, 3) that there is the push by the US government for companies to insulate themselves through cyber insurances. 4) It also appears that customers who most feel the financial impact of security breaches most are small businesses, which is our SSL customer base
 
 </li>
 <li>
+Similar to how we talk to Netscap to sell warranty. Talks with provider of breach insurance - SysNet. They did not cover full cyberliability.  Also, they structure the insurance which may divert most of the pay off to them to do a forensics assessment of whether breach was fraudulent.  They were not interested in doing risk based tiering of pricing.
 
-Javascript app client was built and packaged as native app. Demonstrated at 
-CuttingEdge 2014 from a technology stack perspective
-
-</li>
+</li> 
 </ul>
 
-<p style="background-color:#80B5C4; padding-left:4.3em">Developer: Ishita Verma, HoangBios Chen <br> Advisor: Michael Klieman, Rick Andrews <br> Year: 2014</p>
+<p style="background-color:#80B5C4; padding-left:4.3em">Developer: Ishita Verma<br> Advisor: Rick Andrews, Darren Noy <br> Year: 2014</p>
 
 
-     </div>
+  
 </div>
 
 <!-- Menu Toggle Script -->

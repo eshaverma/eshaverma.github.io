@@ -1,24 +1,21 @@
 <div>
-    <div style="float:left; width:50%; position: fixed">
+  
         <p>
-           <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+           <a href="#menu-toggle" class="btn btn-default btn-xs" id="menu-toggle">Toggle Menu</a>
         </p>
-        <h3>SSL Certificate Management App</h3>
+        <h4>SSL on Devices</h4>
  
         <div style="position: relative; left: 0; top: 0;">
         </div>
         
-    </div>
-    <div style="float:right; width:50%; overflow-y:scroll">  
-    <br>
-    <br>
+    
     <br>
    <p> <u>Progress: </u></p>
         <table style="width:70%">
           <tr>
-            <td><img src=images/h_complete.png height="100" width="100"></td>
-            <td><img src=images/h_three_fourth.png height="100" width="100" align="center"></td>		
-            <td><img src=images/h_half.png height="100" width="100"></td>
+            <td><img src=images/h_half.png height="70" width="70"></td>
+            <td><img src=images/h_quarter.png height="70" width="70" align="center"></td>		
+            <td><img src=images/h_none.png height="70" width="70"></td>
           </tr>
           <tr>
               <!--
@@ -32,69 +29,59 @@
         </table>
         <br>
    
-          <p style="background-color:rgb(251, 174, 38); padding-left:4.3em">Quick to Release
-Innovation</p>
+          <p style="background-color:rgb(251, 174, 38); padding-left:4.3em">Longer-Term Innovation</p>
 
  
 
  
-        Bringing Current Web SSL Retail Portal to Mobile
-        What does this solve?
+        SSL on Mobile
 <br>
 <ul>
 <li>
-        Easier purchase and management of SSL certificates by customer
-        </li>
+        New Business: A mobile browser optimized product will allow a differentiated offering as compared to our current product in terms of better security, lesser processing time and smaller space requirement
+</li>
         <li>
+        For native apps, an app user has to be placing considerable trust on the app provider to have implemented SSL/TLS correctly with authentication, if at all. Hence, it is pretty risking sending private data from mobile apps in their current state, as it’s unencrypted soons as it it gets outside the encryption and authentication of the 3G network, and far worse over Wifii. 
 
-Can send customer push messages. These can be security-related (“You have two 
-SHA-1 certificates that need to be replaced”) or marketing-related (“Black Friday 
-Special – EV Certificate for only $599”).
-</li>
-<li>
-Can build other usability enhancements not possible on a web interface (ideas 
-discussed later)
-</li>
-<li>
+        </li>
+        </ul>
 
-Display CSR in QR code format on SSLAssistant. Use Mobile App to take scan code and upload CSR for enrollment
-</li>
-<li>
-Leverage Trust Center Customer portal to manage documents 
-needed by Auth team. Customer Usability/Productivity fix: Notify customer of pending/optional
-documents to hasten customer authentication and hence cert issuance, and let
-them upload it through Trust Center portal. Replaces manually emailing 
-documents. Easy to know what was submitted.
-</li>
-</ul>
-
-
-Last known state?
-
+         SSL on Internet of Things
+<br>
 <ul>
 <li>
-
-Engineering would need to build a lightweight catalog service, to file customer 
-documents with Auth team database
-</li>
-
-<li>
-
-Retail team has existing services to send back customer data to any client
-
+     New Business: As the first CA, we played a huge part in creating the SSL ecosystem. We can bring to IoT all the lessons learned in the past (almost) 20 years of practical PKI. The model that was built for user/web-site trust can also be applied to IoT systems in which millions or billions of devices, created by diverse vendors, need to securely connect to each other. It makes sense to leverage a small number of trusted CAs to build and manage trust among vendors.   
 </li>
 <li>
-
-Javascript app client was built and packaged as native app. Demonstrated at 
-CuttingEdge 2014 from a technology stack perspective
+There are many appliance providers, especially smaller ones that will flood the market for IoT.  For these small companies, Symantec can look into providing not just SSL Certs but also a small hardware component that fits within these appliances, that provides network encryption functions. While thinking of SSL on smartphones, I realized my Raspberry Pi (a device comparable to  IoT devices) runs the same flavor of Debian as Android.  Hence, I predict that very little Java/C code establishing a SSL client and a keystores, can be put on a small, non-tamperable chip, and purchased off-the-shelf and installed on IoT devices as a part of the Trusted Computing Base.
 
 </li>
 </ul>
 
-<p style="background-color:#80B5C4; padding-left:4.3em">Developer: Ishita Verma, HoangBios Chen <br> Advisor: Michael Klieman, Rick Andrews <br> Year: 2014</p>
+ SSL on Bluetooth
+<br>
+<ul>
+<li>
+Internet of Things add-on: SSL is commonly used over the net. However, over short ranges, I wanted to highlight that SSL can also be used over bluetooth. I have not tried this, but it appears that there are some opensource libraries, such as spongycastle, bouncycastle (we already use this one), and IOIO over bluetooth that can help make a SSL wrapper around a bluetooth socket.
+</li>
+</ul>
+
+        Last known state?
+        <ul>
+        <li>
+        
+        Trust Services was looking into creating a browser offering, starting by focusing on the financial services, online retail and productivity apps. Their needs most closely match the potential advantages provided by such a product
+
+        </li>
+        <li>
+        Symantec R&D is planning for leveraging and customizing root, private CAs and Trust Ecosystem, especially looking at Automotives. Magnum team is supporting the router project
+</li>
+</ul>
+        
+<p style="background-color:#80B5C4; padding-left:4.3em">Developer: Ishita Verma<br> Advisor: Trust Services, IoT team<br> Year: 2014</p>
 
 
-     </div>
+  
 </div>
 
 <!-- Menu Toggle Script -->

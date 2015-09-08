@@ -1,0 +1,108 @@
+<div>
+    <div style="float:left; width:50%; position: fixed">
+        <p>
+           <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+        </p>
+        <h3>SSL Certificate Management App</h3>
+ 
+        <div style="position: relative; left: 0; top: 0;">
+            <img id="iphone" src="images/iphone.png" style="position: relative; top:0; left: 0;"/>
+            <img id="symc_app_display" src="images/symc_app.gif" style="position: absolute; top: 69px; left: 110px;"/>
+        </div>
+        
+    </div>
+    <div style="float:right; width:50%; overflow-y:scroll">  
+    <br>
+    <br>
+    <br>
+   <p> <u>Progress: </u></p>
+        <table style="width:70%">
+          <tr>
+            <td><img src=images/h_complete.png height="100" width="100"></td>
+            <td><img src=images/h_three_fourth.png height="100" width="100" align="center"></td>		
+            <td><img src=images/h_half.png height="100" width="100"></td>
+          </tr>
+          <tr>
+              <!--
+              <td style="padding-left:2.3em">Ideation & Research</td>
+            <td align="center">Software Development</td>		
+            <td>In-Production Code</td> -->
+            <td>Ideation and Research</td>
+            <td>Product Development</td>		
+            <td>In-Production Code</td>
+          </tr>
+        </table>
+        <br>
+   
+          <p style="background-color:rgb(251, 174, 38); padding-left:4.3em">Quick to Release
+Innovation</p>
+
+ 
+
+ 
+        Bringing Current Web SSL Retail Portal to Mobile
+        What does this solve?
+<br>
+<ul>
+<li>
+        Easier purchase and management of SSL certificates by customer
+        </li>
+        <li>
+
+Can send customer push messages. These can be security-related (“You have two 
+SHA-1 certificates that need to be replaced”) or marketing-related (“Black Friday 
+Special – EV Certificate for only $599”).
+</li>
+<li>
+Can build other usability enhancements not possible on a web interface (ideas 
+discussed later)
+</li>
+<li>
+
+Display CSR in QR code format on SSLAssistant. Use Mobile App to take scan code and upload CSR for enrollment
+</li>
+<li>
+Leverage Trust Center Customer portal to manage documents 
+needed by Auth team. Customer Usability/Productivity fix: Notify customer of pending/optional
+documents to hasten customer authentication and hence cert issuance, and let
+them upload it through Trust Center portal. Replaces manually emailing 
+documents. Easy to know what was submitted.
+</li>
+</ul>
+
+
+Last known state?
+
+<ul>
+<li>
+
+Engineering would need to build a lightweight catalog service, to file customer 
+documents with Auth team database
+</li>
+
+<li>
+
+Retail team has existing services to send back customer data to any client
+
+</li>
+<li>
+
+Javascript app client was built and packaged as native app. Demonstrated at 
+CuttingEdge 2014 from a technology stack perspective
+
+</li>
+</ul>
+
+<p style="background-color:#80B5C4; padding-left:4.3em">Developer: Ishita Verma, HoangBios Chen <br> Advisor: Michael Klieman, Rick Andrews <br> Year: 2014</p>
+
+
+     </div>
+</div>
+
+<!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
